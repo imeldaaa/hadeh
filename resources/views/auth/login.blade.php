@@ -66,6 +66,9 @@
                 <div class="form-group">
                   <button class="btn btn-primary submit-btn btn-block" type="submit">Login</button>
                 </div>
+                <div class="form-group">
+                  <button class="btn btn-primary submit-btn btn-block" type="submit">Register</button>
+                </div>
             </div>
             <p class="footer-text text-center" style="margin-top: 20px;color: #308ee0">Copyright © {{date('Y')}} Gilacoding.com - All rights reserved.</p>
           </div>

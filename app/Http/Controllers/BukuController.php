@@ -52,20 +52,20 @@ class BukuController extends Controller
         return view('buku.create');
     }
 
-    public function format()
-    {
-        $data = [['judul' => null, 'isbn' => null, 'pengarang' => null, 'penerbit' => null, 'tahun_terbit' => null, 'jumlah_buku' => null, 'deskripsi' => null, 'lokasi' => 'rak1/rak2/rak3']];
-            $fileName = 'format-buku';
+    // public function format()
+    // {
+    //     $data = [['judul' => null, 'isbn' => null, 'pengarang' => null, 'penerbit' => null, 'tahun_terbit' => null, 'jumlah_buku' => null, 'deskripsi' => null, 'lokasi' => 'rak1/rak2/rak3']];
+    //         $fileName = 'format-buku';
             
 
-        $export = Excel::create($fileName.date('Y-m-d_H-i-s'), function($excel) use($data){
-            $excel->sheet('buku', function($sheet) use($data) {
-                $sheet->fromArray($data);
-            });
-        });
+    //     $export = Excel::create($fileName.date('Y-m-d_H-i-s'), function($excel) use($data){
+    //         $excel->sheet('buku', function($sheet) use($data) {
+    //             $sheet->fromArray($data);
+    //         });
+    //     });
 
-        return $export->download('xlsx');
-    }
+    //     return $export->download('xlsx');
+    // }
 
     public function import(Request $request)
     {

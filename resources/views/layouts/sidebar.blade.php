@@ -70,7 +70,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="">Laporan Anggota</a>
                 </li>
-                -->
+                
                  <li class="nav-item">
                   <a class="nav-link" href="{{url('laporan/buku')}}">Laporan Buku</a>
                 </li>

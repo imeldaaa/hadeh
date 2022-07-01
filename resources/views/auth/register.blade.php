@@ -36,9 +36,9 @@ var check = function() {
     </script>
 @stop
 
-@extends('layouts.app')
+<!-- @extends('layouts.app')  -->
 
-@section('content')
+<!-- @section('content') -->
 
 <form method="POST" action="{{ route('user.store') }}" enctype="multipart/form-data">
     {{ csrf_field() }}

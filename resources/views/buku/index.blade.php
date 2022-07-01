@@ -16,32 +16,13 @@
   <div class="col-lg-2">
     <a href="{{ route('buku.create') }}" class="btn btn-primary btn-rounded btn-fw"><i class="fa fa-plus"></i> Tambah Buku</a>
   </div>
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <form action="{{ url('import_buku') }}" method="post" class="form-inline" enctype="multipart/form-data">
-            {{ csrf_field() }}
-            <div class="input-group {{ $errors->has('importBuku') ? 'has-error' : '' }}">
-              <input type="file" class="form-control" name="importBuku" required="">
 
-              <span class="input-group-btn">
-                              <button type="submit" class="btn btn-success" style="height: 38px;margin-left: -2px;">Import</button>
-                            </span>
-            </div>
-          </form>
-
-        </div>
-    <div class="col-lg-12">
-                  @if (Session::has('message'))
-                  <div class="alert alert-{{ Session::get('message_type') }}" id="waktu2" style="margin-top:10px;">{{ Session::get('message') }}</div>
-                  @endif
-                  </div>
-</div>
 <div class="row" style="margin-top: 20px;">
 <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
 
                 <div class="card-body">
                   <h4 class="card-title pull-left">Data Buku</h4>
-                  <a href="{{url('format_buku')}}" class="btn btn-xs btn-info pull-right">Format Buku</a>
                   <div class="table-responsive">
                     <table class="table table-striped" id="table">
                       <thead>
